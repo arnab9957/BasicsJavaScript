@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javaScript</title>
+</head>
+<body style="background-color: black; color: bisque;">
+    <div class="language"><ul class="lang">
+        <li>JavaScript</li>
+    </ul></div>
+    <script>
+        function addLanguage(language) {
+            const li = document.createElement('li')
+            li.innerHTML = `${language}`
+            document.querySelector('.lang').appendChild(li)
+        }
+
+        addLanguage("python")
+        addLanguage("ruby")
+        addLanguage("php")
+
+        function addlangOptimized(languageo){
+            const li = document.createElement('li');
+            li.appendChild(document.createTextNode(languageo))
+            document.querySelector('.lang').appendChild(li)
+        }
+
+        addlangOptimized("typescript")
+        addlangOptimized("HTML")
+        addlangOptimized("CSS")
+
+        const thirdLang = document.querySelector("li:nth-child(3)")
+        const replacedlang = document.createElement('li')
+        replacedlang.textContent = "R"
+        thirdLang.replaceWith(replacedlang)
+
+    </script>
+</body>
+</html>
