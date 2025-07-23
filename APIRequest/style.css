@@ -1,0 +1,70 @@
+        /* Basic styles for the page */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* The card container */
+        .card {
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            overflow: hidden; /* This keeps the image corners rounded */
+            width: 320px;
+            text-align: center;
+        }
+
+        /* The top section with the photo */
+        .card-photo-box {
+            background-color: #ddd; /* A placeholder color */
+            height: 200px; /* Set a fixed height for the photo area */
+            width: 100%;
+        }
+
+        .card-photo-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* This makes the image cover the box without distortion */
+        }
+
+        /* The main content of the card */
+        .card-body {
+            padding: 25px;
+        }
+
+        .card-body h2 {
+            margin: 10px 0 5px;
+            font-size: 22px;
+        }
+
+        .card-body p {
+            color: #555;
+            margin: 0;
+            font-size: 16px;
+        }
+
+        /* The followers section at the bottom */
+        .card-followers {
+            background-color: #fafafa;
+            border-top: 1px solid #eeeeee;
+            padding: 20px;
+        }
+
+        .card-followers h3 {
+            margin: 0;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        
+        .card-followers p {
+            color: #777;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 4px;
+        }
