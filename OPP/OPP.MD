@@ -1,0 +1,22 @@
+                 JavaScript and Classes
+
+                         OPP
+
+ OBJECT => COOLLECTION OF PROPERTIES AND METHODS
+<!-- EXAMPLES - -->
+- toLowerCase
+
+ <!-- PARTS OF OPP -->
+
+-CONSTRUCTOR FUNCTION
+-PROTOTYPES
+-CLASSES
+-INSTANCES ( new, this )
+
+ <!-- 4 PILLERS -->
+
+1.ABSTRACTION
+2.ENCAPULATION
+3.INHERITANCE
+4.POLYMORPHISM
+
