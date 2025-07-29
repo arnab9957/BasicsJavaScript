@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closures</title>
+</head>
+
+<body style="background-color: #313131; color: rgb(235, 143, 23);">
+    <h1>Closures</h1>
+    <button class="white">White</button>
+    <button class="blue">Blue</button>
+
+    <script>
+        // function init() {
+        //     var name = "Mozilla"; // name is a local variable created by init
+        //     function displayName() {
+        //         // displayName() is the inner function, that forms a closure
+        //         console.log(name); // use variable declared in the parent function
+        //     }
+        //     displayName();
+        // }
+        // init();
+
+        // function Parent(){
+        //     const prop = "100 yeards"
+        //     // console.log(`parent' prop: ${child1prop}`);  We don't got this access
+
+        //     function child1(){
+        //         const child1prop = "50 yeards"
+        //         console.log(`Child1: ${prop}`);
+
+        //     }
+
+        //     function child2(){
+        //         console.log(`Child2: ${prop}`);
+        //         // console.log(`child2 prop: ${child1prop}`); We don't got this access
+        //     }
+
+        //     child1()
+        //     child2()
+        // }
+
+        // Parent()
+
+        // function makeFunc() {
+        //     const name = "Mozilla";
+        //     function displayName() {
+        //         console.log(name);
+        //     }
+        //     return displayName; //this returns with its lexical scoping
+        // }
+
+        // const myFunc = makeFunc();
+        // myFunc();
+
+
+
+
+    </script>
+
+    <script>
+        // document.querySelector(".white").addEventListener('click', ()=>{
+        //     document.body.style.backgroundColor = 'white'
+        // })
+
+        // document.querySelector(".blue").addEventListener('click', ()=>{
+        //     document.body.style.backgroundColor = 'blue'
+        // })
+
+        //lexical scoping
+        function clickHandler(color) {
+            return function() {
+                document.body.style.backgroundColor = `${color}`;
+            }
+        }
+
+        document.querySelector('.white').addEventListener('click', clickHandler('white'));
+        document.querySelector('.blue').addEventListener('click', clickHandler('blue'));
+    </script>
+</body>
+
+</html>
